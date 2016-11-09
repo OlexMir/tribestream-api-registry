@@ -8,7 +8,8 @@ angular.module('website-components-text', [
             scope: {
                 originalValue: '=value',
                 type: '@',
-                placeholder: '@'
+                placeholder: '@',
+                pattern: '@'
             },
             template: require('../templates/component_text.jade'),
             controller: ['$log', '$scope', ($log, $scope) => $timeout(() => {
